@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background:linear-gradient(rgb(49, 146, 175),white);
+   height: 100vh;
+   background-size: cover;
+   background-repeat: no-repeat;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
+.container{
+    display: block;
+    width: 30%;
+}
+.marco{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+ .marco .tiempo{
+    display: flex;
+    background-color: rgba(85, 170, 209, 0.918);
+    color: white;
+    width: 100%;
+    border-radius: 20px;
+    justify-content: center;
+  height: 15vh;
+  align-items: center;
+min-width: 170px;
+}
+.marco .tiempo span{
+   text-align: center;
+   width: 12%;
+  font-size: 2.3em;
+}
+.button{
+    width: 100%;
+    border-radius: 80px;
+    margin-top: 2%;
+    text-align: center;
+}
+.button button{
+    width: 30%;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid rgb(49, 146, 175) ;
+    cursor: pointer;
+    background: rgb(228, 227, 227);
+    padding:2.5% 5% 2.5% 5% ;
+    color: rgb(49, 146, 175);
+    min-width: 80px;
+}
+.button button:hover{
+    background: rgb(248, 248, 248);
+}
+@media(max-width:760px){
+.button button{
+    width: 60%;
+    flex-direction: column;
+    margin: 2% 0 2% 0;
+    align-items: center;
+}
+.marco .tiempo span{
+    font-size: 1.5em;
+    padding: 0;
+}
+}
